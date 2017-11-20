@@ -1,0 +1,38 @@
+ <div id="about">
+  <div class="about-content">
+    <h1>This template is built with <i class="fa fa-heart"></i> by</h1>
+
+
+<ul class="list-inline text-center">
+  <% data.users.each do |user| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.github_nickname}", class: "img-circle" %>
+      <h3><%= user.name.titleize %></h3>
+      <p>
+        <a href="http://github.com/#{user.github_nickname}">
+        <i class="fa fa-github"></i> <%=user.github_nickname%></a>
+      </p>
+    </li>
+  <% end %>
+</ul>
+
+ <!--   <ul class="list-inline">
+        <li>
+          <img src="https://kitt.lewagon.com/placeholder/users/lemon57" class="img-circle" alt="Lemon57" />
+          <h2>Roman Kislov</h2>
+          <p>
+            <a href="http://github.com/lemon57">
+            <i class="fa fa-github"></i> lemon57 </a>
+          </p>
+        </li>
+        <li>
+          <img src="https://kitt.lewagon.com/placeholder/users/damiendillon" class="img-circle" alt="Damiendillon" />
+          <h2>Damien Dillon</h2>
+          <p>
+            <a href="http://github.com/damiendillon">
+            <i class="fa fa-github"></i> damiendillon</a>
+          </p>
+        </li>
+    </ul> -->
+  </div>
+</div>
