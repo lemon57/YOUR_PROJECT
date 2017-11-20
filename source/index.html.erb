@@ -5,6 +5,12 @@ title: Le Wagon - Middleman
 <div id="home">
   <div class="home-content">
     <%= image_tag "logo.png", width: "200" %>
+    <h2>Today is <%=Date.today %></h2>
+    <ul>
+      <% ["erb", "middleman", "frontend"].each do |odject| %>
+        <li>We are learning about <%= odject %> </li>
+      <% end %>
+    </ul>
     <p>
       Middleman is now running!
     </p>

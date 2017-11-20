@@ -1,0 +1,15 @@
+berlin:
+  adress: "berlin street"
+  rating: 5
+  full: true
+  description: "24 hour nightlife"
+Paris:
+  adress: "paris street"
+  rating: 7
+  full: true
+  description: "24 hour nightlife"
+Amsterdam:
+  adress: "amsterdam street"
+  rating: 9
+  full: true
+  description: "24 hour nightlife"
